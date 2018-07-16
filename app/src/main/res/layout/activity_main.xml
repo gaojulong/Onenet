@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="33dp"
+        tools:ignore="MissingConstraints">
+
+
+
+        <TextView
+
+            android:id="@+id/tv_view"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="数据显示"/>
+
+        <Button
+            android:id="@+id/gobtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/stopbtn"
+            android:layout_marginBottom="191dp"
+            android:text="前进"/>
+
+        <Button
+            android:id="@+id/leftbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/rightbtn"
+            android:layout_marginStart="35dp"
+            android:text="左转"/>
+
+        <Button
+            android:id="@+id/rightbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/stopbtn"
+            android:layout_marginEnd="48dp"
+            android:text="右转"/>
+
+        <Button
+            android:id="@+id/linebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/baojingstart"
+            android:layout_marginTop="100dp"
+            android:text="寻迹"/>
+
+        <Button
+            android:id="@+id/baojingstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/fengmingqiopen"
+            android:layout_marginStart="26dp"
+            android:text="开报警"/>
+
+        <Button
+            android:id="@+id/fengmingqiclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/baojingstart"
+            android:layout_marginEnd="29dp"
+            android:text="关闭蜂鸣器"/>
+
+        <Button
+            android:id="@+id/fengmingqiopen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            android:text="打开蜂鸣器"/>
+
+        <Button
+            android:id="@+id/stopbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="126dp"
+            android:layout_marginStart="133dp"
+            android:text="停止"/>
+
+        <Button
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/gobtn"
+            android:layout_marginBottom="67dp"
+            android:text="后退"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
